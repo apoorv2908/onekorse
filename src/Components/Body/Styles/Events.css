@@ -1,0 +1,195 @@
+.upcoming-events {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  font-family: Montserrat, sans-serif;
+  text-align: left;
+}
+
+.d1 {
+  background: #fff7f0;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header h2 span {
+  color: #f79c42;
+}
+
+.header p {
+  color: #666;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.learn-more-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.events-list {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event-card {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", serif;
+  background: linear-gradient(to bottom, white, rgb(252, 236, 238));
+}
+
+.event-image {
+  width: 400px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-info {
+  flex: 1;
+  padding: 1rem;
+  position: relative;
+  padding-left: 100px;
+}
+
+.book-ticket {
+  position: absolute;
+  top: 3.5rem;
+  height: 80px;
+  font-family: "Montserrat", serif;
+  left: -50px;
+  background-color: #ff807c;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transform-origin: left top;
+}
+
+.event-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.event-location {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.3rem;
+}
+
+.event-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: "Montserrat", serif;
+  background: linear-gradient(to bottom, white, rgb(252, 236, 238));
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  min-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .a2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .a2 h2 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .learn-more-button {
+    margin-top: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .events-list {
+    gap: 15px;
+  }
+
+  .event-card {
+    flex-direction: column;
+  }
+
+  .event-image {
+    width: 100%;
+    height: 150px;
+  }
+
+  .event-info {
+    padding: 1rem;
+    padding-left: 20px;
+  }
+
+  .book-ticket {
+    top: 2rem;
+    left: -25px;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .event-title {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .event-location {
+    font-size: 0.8rem;
+  }
+
+  .event-price {
+    font-size: 1rem;
+    padding: 0.5rem;
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .upcoming-events {
+    padding: 1rem;
+  }
+
+  .learn-more-button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .event-card {
+    flex-direction: column;
+  }
+
+  .event-info {
+    padding: 1rem;
+    padding-left: 10px;
+  }
+
+  .event-price {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    min-width: 60px;
+  }
+}

@@ -1,0 +1,77 @@
+.banner-container {
+  position: relative;
+  text-align: center;
+}
+
+.contactus-banner-1 {
+  width: 100%;
+  height: auto;
+}
+
+.banner-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contact-form-section {
+  margin: auto;
+}
+
+.customer-care .contact-info {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.location-block {
+  flex: 1 1 45%;
+  margin-bottom: 20px;
+}
+
+.location-block p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.location-block h5 {
+  font-size: 16px;
+  color: #ff807c;
+  margin-bottom: 10px;
+}
+
+.contactus-banner-2 {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.submit-btn {
+  background-color: #ff807c;
+  border: none;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .banner-heading {
+    font-size: 2rem;
+  }
+
+  .location-block {
+    flex: 1 1 100%;
+    text-align: left;
+  }
+
+  .submit-btn {
+    width: auto;
+  }
+}

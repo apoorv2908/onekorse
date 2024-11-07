@@ -1,0 +1,146 @@
+.professional-classes {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h4 {
+  font-size: 1rem;
+  color: #888;
+  font-weight: normal;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.a2 h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.header h2 span {
+  background-image: linear-gradient(to right, #fec783, #ff807c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.a2 h2 span {
+  background-image: linear-gradient(to right, #fec783, #ff807c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.class-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.class-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  border: 1px solid lightgray;
+}
+
+.card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.tags {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  background-color: #ff807c;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.tagsm {
+  background-color: white;
+  color: black;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.featured-tag {
+  background-color: #ff807c;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.rating {
+  color: #ff807c;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.star {
+  font-size: 1rem;
+}
+
+.star.filled {
+  color: #ff807c;
+}
+
+.price {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.current-price {
+  font-size: 1.2rem;
+  color: #f79c42;
+  font-weight: bold;
+}
+
+.original-price {
+  font-size: 1rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.view-details {
+  color: #ff807c;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .class-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .class-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

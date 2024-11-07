@@ -1,0 +1,145 @@
+.pricing-plans {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.pricing-plans h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pricing-plans h2 span {
+  background-image: linear-gradient(to right, #fec783, #ff807c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.billing-cycle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.billing-cycle button {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.billing-cycle button.active {
+  background: linear-gradient(to right, #fec783, #ff807c);
+  color: white;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.plan-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.plan-wrapper .amala {
+  width: 300px;
+  text-align: center;
+  margin-bottom: -80px;
+}
+
+.plan-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  width: 100%;
+}
+
+.plan-card.highlight {
+  margin-top: 100px;
+  background: linear-gradient(to right, #fec783, #ff807c);
+  color: black;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.price span {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+li {
+  font-size: 0.9rem;
+  color: #555;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+li:before {
+  content: "●";
+  color: #f79c42;
+  position: absolute;
+  left: 0;
+}
+
+.purchase-btn {
+  background-color: #ff807c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .plans-container {
+    flex-direction: column;
+  }
+
+  .plan-card.highlight {
+    margin-top: 0;
+  }
+}
